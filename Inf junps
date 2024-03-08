@@ -1,0 +1,26 @@
+local PabloLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/BatuKvi123/PabloLibV3/main/PabloLibV3"))()
+local window=PabloLib:Create("Animal Simulator")
+
+----Tabs----
+
+local tab1 = window:CreateTab("Infinity Yield")
+
+----Buttons----
+
+tab1:CreateButton("Infinity Yield", function()
+loadstring(game:HttpGet:("https://github.com/KarimSjsjdjsj/Animal-Simulator.git"))();
+end)
+
+tab1:CreateTextbox("Change your Speed", function(a)
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = a
+print(a)
+end)
+
+tab1:CreateTextbox("Change Your Jumppower", function(a)
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = a
+print(a)
+end)
+
+----WARING----
+
+tab1:CreateWarning("Warning") 
